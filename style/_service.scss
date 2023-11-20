@@ -1,0 +1,50 @@
+
+
+.service{
+    width:80%;
+    display: flex;
+    justify-content: center;
+    // center áp dụng cho các thẻ con của thằng center
+    padding: 0 3rem;
+    margin: 5rem auto;
+    // margin 5 rem trên dưới 5rem căn giữa auto 
+
+
+
+    &_item1, &_item2{
+        display:flex;
+        
+        .item1{
+            padding:0 15px;
+            display:flex;     
+            color:#333;
+            
+            .item1--icon{
+                color:$yellow;
+            }
+            .item1--content{
+                margin-left:1rem;
+
+                h4{
+                    font-size:1em;
+                    font-family:Lato, Arial, Helvetica, sans-serif;
+                    font-weight:400;
+                    line-height:1;
+                    margin:0 0 10px 0;
+                    text-transform:capitalize;
+                    color:#222222;
+
+                }
+                h6{
+                    font-size:1em;
+                    margin:0;
+                    font-weight:400;
+                    color:#555555;
+                }
+
+
+            }
+        }
+    }
+}
+

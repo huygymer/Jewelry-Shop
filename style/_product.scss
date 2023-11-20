@@ -1,0 +1,83 @@
+.product{
+    margin-top:100px;
+
+    span{
+        font-size: 2em;
+        line-height: 1;
+        margin: 0;
+        display: block;
+        font-weight: 550;
+        text-align: center;
+    }
+    p{
+        text-align:center;
+        margin: 12px 0 0;
+        font-size: 1em;
+        color: #555555;
+        letter-spacing: 0.025em;
+        line-height: 22px;
+        font-weight: 400;
+    }
+
+    .product-type{
+        margin: 20px 0 20px 0;
+        display:Flex;
+        justify-content: center;
+        gap:80px;
+
+        a{
+            text-decoration:none;
+            color:#222222;
+        }
+    }
+
+    // menu bracelet
+
+    .product-bracelet{
+        display:flex;
+        justify-content: center;
+        gap:1.3rem;
+
+        .item{
+            position:Relative;
+
+            img{
+                width:300px;
+            }
+        }
+        
+        .item{
+            .product-category{
+                text-align:Center;
+
+                a{
+                    color:#999999;
+                    text-decoration:none;
+                }
+            }
+            .product-name{
+                text-align:center;
+
+                a{
+                    text-decoration:none;
+                    color:#222222;
+                }
+            }
+            .product-price{
+                margin-top:0.5rem;
+                
+                span{
+                    font-size:15px;
+                    font-weight:400;
+                    color:#999999;  
+                }
+            }
+            // .add-button{
+            //     position:absolute;
+            //     text-align:Center;
+            //     justify-content: center;
+            // }
+
+        }
+    }
+}

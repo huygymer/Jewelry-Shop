@@ -1,0 +1,189 @@
+.header-navbar--main{
+    display:flex;
+    justify-content: space-between;
+    background:#ffffff;
+    position:sticky;
+    top:0;
+
+    // logo
+
+    .main-title{
+        display:flex;
+        align-items: center;
+        flex:0.28;
+        line-height:80px;
+
+        a{
+            margin:0 0 0 40px;
+    
+            img{
+                vertical-align: middle;
+                border-style: none;
+                width:100px;
+                height:100%;
+            }
+        }
+}
+
+    // sub menu 
+
+    .navbar-main{
+        align-items: center;
+        display:flex;
+        justify-content: flex-start;
+        margin-bottom:0 !important;
+        gap:1rem;
+        line-height:80px;
+        
+        li{
+            position:relative;
+            list-style:none;
+            
+            a{
+                display:block;
+                font-weight: 500;
+                font-size:15.5px;
+                text-decoration:none;
+                color:#333;
+                // padding:10px;
+            }
+
+            // home menu
+            .navbar-main--home{
+                z-index:1000;
+                visibility:hidden;
+                position:absolute;
+                width:200px;
+                line-height:50px;
+                text-indent:10px;
+                box-shadow:1px 1px 1px 1px #696969;
+                li{
+                    color:#424242;
+                }
+            }
+
+            // shop menu
+
+            .navbar-main--shop{
+                z-index:1000;
+                display:flex;
+                justify-content:space-between;
+                gap:1.5rem;
+                width:500px;
+                height:250px;
+                line-height:30px;
+                text-indent:10px;
+                background:#fff;
+                display:none;
+                position:absolute;
+                border:1px solid #fff;
+                box-shadow:1px 1px 1px 1px #696969;
+
+                ul{
+                    position:relative;
+                       margin:10px;
+
+                    li{
+                        color:#696969;
+                    }
+                }
+            }
+            
+            // blog menu
+
+            .navbar-main--blog{
+                color:#333;
+            }
+            .navbar-main--page{
+                z-index:1000;
+                visibility:hidden;
+                position:absolute;
+                box-shadow:1px 1px 1px 1px #696969;
+                background:#fff;
+                width:200px;
+                line-height:40px;
+                padding:10px;
+                text-indent:10px;
+            }
+
+
+        }
+        li:hover .navbar-main--home{
+            display:block;
+            visibility:visible;
+        }
+        li:hover .navbar-main--shop{
+            display:flex;
+            visibility:visible;
+        }
+        li:hover .navbar-main--page{
+            display:block;
+            visibility:visible;
+        }
+    }
+    
+    .navbar-search{
+            line-height:100px;
+            width:100%;
+            flex:0.35;
+            align-items: center;
+        .search{
+            width:250px;
+            line-height:80px;
+            padding:0.3rem 2.5rem;
+            border-radius:20px;
+            margin-left:0.4rem;
+            position:relative;
+
+            .search-box{
+                border:none;
+                outline:none;
+
+                    .search_input{
+                        margin-left:10px;
+                        border:none;
+                        outline:none;
+                        background-color:transparent;
+                        width:130px;
+                        color:#424242;
+                        font-size:0.85rem;
+                        padding-bottom:0.5rem;
+
+                    }
+            }
+        }
+
+
+    }
+
+    .navbar-wrapper{
+        display:flex;
+        line-height:80px;
+        margin:10px;
+        justify-content:flex-start;
+
+        &_icon--user{
+            // margin-left:100px;
+            .user-icon{
+                width:30px;
+                height:30px;
+            }
+        }
+
+        &_icon--heart{
+
+            .heart-icon{
+                width:30px;
+                height:30px;
+            }
+        }
+
+        &_icon--cart{
+
+            .cart-icon{
+                width:30px;
+                height:30px;
+            }
+        }
+    }
+}
